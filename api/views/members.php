@@ -1,6 +1,6 @@
 <?php // api/views/members.php ?>
 <section>
-    <h1 class="text-3xl font-bold mb-2 text-white">Forge Team</h1>
+    <h1 class="text-2xl md:text-3xl font-black font-brand tracking-wider text-white uppercase">Forge Team</h1>
     <p class="text-gray-400 mb-8 text-sm md:text-base">The developers and innovators collaborating behind TechForge.</p>
     
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
