@@ -1,6 +1,6 @@
 <?php // api/views/projects.php ?>
 <section>
-    <h1 class="text-3xl font-bold mb-2 text-white">Technical Matrix</h1>
+    <h1 class="text-2xl md:text-3xl font-black font-brand tracking-wider text-white uppercase">Technical Matrix</h1>
     <p class="text-gray-400 mb-8 text-sm md:text-base">Active build cycles managed by TechForge teams.</p>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
