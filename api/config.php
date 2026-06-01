@@ -5,7 +5,7 @@ $community = [
     "tagline" => "Learn. Build. Innovate. Collaborate.",
     "values" => ["Dedication", "Consistency", "Curiosity", "Innovation", "Collaboration", "Knowledge Sharing", "Problem Solving", "Continuous Learning"],
     "team" => [
-        ["name" => "Jinat Sahorior", "role" => "Founder & Lead Builder", "github" => "https://github.com"],
+        ["name" => "Ritwika Singh", "role" => "Core Ideas Behind Projects", "github" => "https://github.com"],
         ["name" => "Ankita Nandi", "role" => "Core Technology Enthusiast", "github" => "https://github.com"]
     ],
     "projects" => [
