@@ -37,11 +37,18 @@ function mobile_nav_link($pageName, $label) {
                 <span class="text-[9px] md:text-[10px] uppercase font-bold text-cyan-400 tracking-[0.25em] leading-none mt-1">COMMUNITY</span>
             </a>
             
-            <nav class="hidden md:flex space-x-4">
+            <nav class="hidden md:flex space-x-4 items-center">
                 <?php 
                     echo nav_link('home', 'HOME', $page);
                     echo nav_link('projects', 'PROJECTS', $page);
                     echo nav_link('members', 'MEMBERS', $page);
+                    
+                    // ====== UPDATE: DESKTOP AUTH BUTTON ======
+                    if (isset($is_logged_in) && $is_logged_in) {
+                        echo nav_link('dashboard', 'DASHBOARD', $page);
+                    } else {
+                        echo nav_link('login', 'LOGIN', $page);
+                    }
                 ?>
             </nav>
 
@@ -57,6 +64,13 @@ function mobile_nav_link($pageName, $label) {
                 echo mobile_nav_link('home', 'HOME');
                 echo mobile_nav_link('projects', 'PROJECTS');
                 echo mobile_nav_link('members', 'MEMBERS');
+                
+                // ====== UPDATE: MOBILE AUTH BUTTON ======
+                if (isset($is_logged_in) && $is_logged_in) {
+                    echo mobile_nav_link('dashboard', 'DASHBOARD');
+                } else {
+                    echo mobile_nav_link('login', 'LOGIN');
+                }
             ?>
         </div>
     </header>
